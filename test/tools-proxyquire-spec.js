@@ -23,7 +23,7 @@ describe('Tools', function () {
     });
   });
 
-  describe.only('greet()', function () {
+  describe('greet()', function () {
 
     beforeEach(function () {
       this.person = {
