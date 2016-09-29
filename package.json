@@ -7,7 +7,7 @@
     "test": "mocha",
     "coverage": "istanbul cover _mocha",
     "ci-lint": "eslint -f checkstyle lib/** > checkstyle-result.xml",
-    "ci-test": "istanbul cover _mocha > test.tap && istanbul report clover"
+    "ci-test": "istanbul cover _mocha -- -R tap > test.tap && istanbul report clover"
   },
   "author": "Stavros Zavrakas",
   "license": "ISC",
