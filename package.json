@@ -4,20 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha",
+    "ci-test": "istanbul cover _mocha > test.tap && istanbul report clover"
   },
   "author": "Stavros Zavrakas",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
-    "istanbul": "^0.4.2",
+    "istanbul": "^0.4.5",
     "mocha": "^2.4.5",
     "nock": "^7.2.2",
     "proxyquire": "^1.7.4",
     "request": "^2.69.0",
     "rewire": "^2.5.1",
-    "sinon": "^1.17.3"
+    "sinon": "^1.17.3",
+    "tape": "^4.6.0"
   },
   "dependencies": {
     "request": "^2.69.0"
