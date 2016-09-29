@@ -6,12 +6,14 @@
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover _mocha",
+    "ci-lint": "eslint -f checkstyle lib/** > checkstyle-result.xml",
     "ci-test": "istanbul cover _mocha > test.tap && istanbul report clover"
   },
   "author": "Stavros Zavrakas",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint": "^3.6.1",
     "istanbul": "^0.4.5",
     "mocha": "^2.4.5",
     "nock": "^7.2.2",

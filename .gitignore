@@ -23,6 +23,7 @@ test.tap
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+checkstyle-result.xml
 
 # Dependency directory
 node_modules
