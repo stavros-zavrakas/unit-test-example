@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover _mocha",
+    "eslint": "eslint lib/**",
     "ci-lint": "eslint -f checkstyle lib/** > checkstyle-result.xml",
     "ci-test": "istanbul cover _mocha -- -R tap > test.tap && istanbul report clover"
   },
