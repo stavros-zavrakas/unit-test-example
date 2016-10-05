@@ -21,9 +21,11 @@
     "request": "^2.69.0",
     "rewire": "^2.5.1",
     "sinon": "^1.17.3",
+    "supertest": "^2.0.0",
     "tape": "^4.6.0"
   },
   "dependencies": {
+    "express": "^4.14.0",
     "request": "^2.69.0"
   }
 }
